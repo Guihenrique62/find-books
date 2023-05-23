@@ -274,7 +274,9 @@
     "yallist": "^3.1.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "sass": "sass --watch src/sass/index.scss:src/styles/style.css"
   },
   "author": "",
   "license": "ISC",
