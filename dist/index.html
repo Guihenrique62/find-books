@@ -7,6 +7,9 @@
    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <script src="index.min.js" defer></script>
+   <script>
+      function handlerPage(){window.location.href = './search.html';}
+   </script>
    <title>Search Books</title>
 </head>
 <body>
@@ -18,12 +21,12 @@
       </div>
    </header>
 
-   <main>
+   <main class="home-main">
       <section class="first">
          <div class="first-container">
             <h1>Encontre os <span>Livros</span> que você procura de onde quiser</h1>
             <p>Pesquise por livros em qualquer lugar, você não precisa saber o nome do livro, se souber o nome do autor ou da editora, basta digitar e pesquisar.</p>
-            <button>Pesquise Agora <i class='bx bxs-right-arrow-alt'></i></button>
+            <button id="home-button" onclick="handlerPage()">Pesquise Agora <i class='bx bxs-right-arrow-alt'></i></button>
          </div>
 
          <div class="img-first">

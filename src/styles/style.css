@@ -2,6 +2,7 @@
 body {
   background-color: rgb(250, 247, 251);
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -44,13 +45,13 @@ header .header-links a {
 
 footer {
   background-color: #333;
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
   height: 4rem;
   color: white;
+  padding: 1rem;
 }
 footer .logo-text {
   color: #6C63FF;
@@ -61,7 +62,7 @@ footer .logo-text {
 }
 footer .bx {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -71,7 +72,7 @@ h2 {
   font-weight: 500;
 }
 
-main {
+.home-main {
   width: 1100px;
   display: flex;
   flex-direction: column;
@@ -214,6 +215,61 @@ main {
 .tech .svg-tech .bx {
   color: #404040;
   font-size: 3rem;
+}
+
+.search-main {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.search-main p {
+  width: 40%;
+}
+
+.search-body {
+  justify-content: space-between;
+}
+
+.image-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.image-book img {
+  height: 100%;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 3rem 0;
+}
+.container-input input {
+  width: 80%;
+  height: 2rem;
+  border: 1px solid #6C63FF;
+  border-radius: 0.2rem 0 0 0.2rem;
+  font-size: 1rem;
+}
+.container-input input:focus {
+  border: 1px solid #2a2585;
+  outline: none;
+}
+.container-input button {
+  width: 2.2rem;
+  border-radius: 0 0.2rem 0.2rem 0;
+  height: 2.1rem;
+  border: 1px solid #6C63FF;
+  background-color: #6C63FF;
+  font-size: 1.2rem;
+}
+.container-input button:hover {
+  background-color: #4f49bf;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

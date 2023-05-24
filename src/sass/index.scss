@@ -3,6 +3,7 @@
 body{
    background-color: rgb(250, 247, 251);
    width: 100vw;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    overflow-x: hidden;
@@ -21,3 +22,6 @@ body{
 @import 'modules/footer.scss';
 //home page styler
 @import 'modules/home.scss';
+
+//search page styler
+@import 'modules/search.scss'
