@@ -1,25 +1,66 @@
-body{
-   background-color: rgb(247, 238, 252);
-}
+//header style
+@import 'header.scss';
 
+.first{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-bottom: 3rem;
+   .first-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 80%;
+      h1{
+         font-size: 2rem;
+         font-weight: 500;
 
-header{
-   display: flex;
-   width: 100vw;
-   height: 2.4rem;
-   justify-content: space-between;
-   align-items: center;
+         span{
+            font-weight: 500;
+            color: #6C63FF;
+         }
+      }
 
-   .header-text{
-      color: #6C63FF;
-      padding: 1rem;
+      button{
+         border: 1px solid #4842b7;
+         width: 45%;
+         height: 2.5rem;
+         background-color: #6C63FF;
+         color: white;
+         display: flex;
+         gap: .5rem;
+         justify-content: center;
+         align-items: center;
+         border-radius: .2rem;
+
+         .bx{
+            color: #ffffff;
+         }
+
+         &:hover{
+            cursor: pointer;
+            background-color: #4842b7;
+         }
+      }
+   }
+   .img-first{
+      height: 500px;
+      display: flex;
       width: auto;
-      font-size: 2rem;
-      text-decoration: none;
-   }
-
-   .header-links{
-      text-align: center;
-      padding: 1rem;
+      justify-content: center;
+      img{
+         height: 100%;
+      }
    }
 }
+
+.second{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding-bottom: 3rem;
+   grid-template-areas: 
+   "h1 h1"
+   "div1 div2";
+}
+
+
