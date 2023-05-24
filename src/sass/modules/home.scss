@@ -1,3 +1,25 @@
 body{
    background-color: rgb(247, 238, 252);
 }
+
+
+header{
+   display: flex;
+   width: 100vw;
+   height: 2.4rem;
+   justify-content: space-between;
+   align-items: center;
+
+   .header-text{
+      color: #6C63FF;
+      padding: 1rem;
+      width: auto;
+      font-size: 2rem;
+      text-decoration: none;
+   }
+
+   .header-links{
+      text-align: center;
+      padding: 1rem;
+   }
+}
