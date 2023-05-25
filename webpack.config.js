@@ -7,7 +7,8 @@ module.exports = {
     compress: true,
   },
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    search: './src/search.js'
   },
   mode: 'production',
   module: {

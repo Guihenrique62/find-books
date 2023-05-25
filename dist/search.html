@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   <script src="index.min.js" defer></script>
+   <script src="search.min.js" defer type="module"></script>
    <title>Search Books</title>
 </head>
 <body class="search-body">
@@ -22,14 +22,47 @@
       <p>Você não precisa saber o nome do livro, se souber o nome do autor ou editora, basta digitar, pesquisar e achar</p>
 
       <div class="container-input">
-         <input type="text" placeholder="Digite autor, nome do livro . . .">
-         <button><i class='bx bx-search-alt-2'></i></button>
+         <input id='input' type="text" placeholder="Digite autor, nome do livro . . .">
+         <button id="button"><i class='bx bx-search-alt-2'></i></button>
       </div>
-      
+
+
+      <div id="books">
+         <div class="book">
+            <div class="img-container"><img src="http://books.google.com/books/content?id=V6A0zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt=""></div>
+            <div class="info">
+               <h3>PercyJackson e o ladrao de raio</h3>
+               <p><b>Authors:</b> Rick azals</p>
+               <p><b>Editora: </b>Saraiva</p>
+               <p><b>Data:</b>24/10/2003</p>
+               <button class="info-btn">Detalhes <i class='bx bx-chevron-right'></i></button>
+            </div>
+         </div>
+         <div class="book">
+            <div class="img-container"><img src="http://books.google.com/books/content?id=V6A0zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt=""></div>
+            <div class="info">
+               <h3>PercyJackson e o ladrao de raio</h3>
+               <p><b>Authors:</b> Rick azals</p>
+               <p><b>Editora: </b>Saraiva</p>
+               <p><b>Data:</b>24/10/2003</p>
+               <button class="info-btn">Detalhes <i class='bx bx-chevron-right'></i></button>
+            </div>
+         </div>
+         <div class="book">
+            <div class="img-container"><img src="http://books.google.com/books/content?id=V6A0zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt=""></div>
+            <div class="info">
+               <h3>PercyJackson e o ladrao de raio</h3>
+               <p><b>Autor: </b>Rick azals, guilherme</p>
+               <p><b>Editora: </b>Saraiva</p>
+               <p><b>Data: </b>24/10/2003</p>
+               <button class="info-btn">Detalhes <i class='bx bx-chevron-right'></i></button>
+            </div>
+         </div>
+      </div>
+
       <div class="image-book">
          <img src="media/books.svg" alt="">
-      </div>
-      
+      </div>  
    </main>
 
 

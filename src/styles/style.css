@@ -5,7 +5,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 * {
@@ -269,6 +268,63 @@ h2 {
 }
 .container-input button:hover {
   background-color: #4f49bf;
+  cursor: pointer;
+}
+
+#books {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+#books .book {
+  display: flex;
+  height: 250px;
+  background-color: white;
+  border: #acacba;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+}
+#books .book .img-container {
+  height: 100%;
+}
+#books .book .img-container img {
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+#books .book .info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+#books .book .info h3 {
+  color: #2a2585;
+  font-weight: 700;
+}
+#books .book .info p {
+  width: 100%;
+}
+#books .book .info p b {
+  font-weight: 700;
+}
+#books .book .info .info-btn {
+  display: flex;
+  border: #2a2585;
+  color: white;
+  background-color: #4f49bf;
+  width: 70%;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+}
+#books .book .info .info-btn:hover {
+  background-color: #3e38be;
   cursor: pointer;
 }
 
