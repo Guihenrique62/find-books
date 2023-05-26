@@ -9,14 +9,14 @@ export default async function getBooks(){
    
    volumes.forEach(book => {
        const id = book?.id
-       const title = book.volumeInfo?.title
-       const authors = book.volumeInfo?.authors
-       const publisher = book.volumeInfo?.publisher
-       const publishedDate = book.volumeInfo?.publishedDate
-       const description = book.volumeInfo?.description
-       const pageCount = book.volumeInfo?.pageCount
-       const averageRating = book.volumeInfo?.averageRating
-       const thumbnail = book.volumeInfo.imageLinks?.thumbnail
+       const title = book.volumeInfo && book.volumeInfo.title;
+       const authors = book.volumeInfo && book.volumeInfo.authors;
+       const publisher = book.volumeInfo && book.volumeInfo.publisher;
+       const publishedDate = book.volumeInfo && book.volumeInfo.publishedDate;
+       //const description = book.volumeInfo?.description
+       //const pageCount = book.volumeInfo?.pageCount
+       //const averageRating = book.volumeInfo?.averageRating
+       const thumbnail = book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail
 
        renderBook(id,thumbnail,title,authors,publisher,publishedDate)
    });
