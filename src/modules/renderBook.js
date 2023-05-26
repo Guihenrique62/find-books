@@ -45,7 +45,7 @@ export default async function renderBook(id,thumbnail,title,authors,publisher,da
    const btn = document.createElement('button')
    btn.classList.add('info-btn')
    btn.id = id
-   btn.innerHTML= `Detalhes <i class='bx bx-chevron-right'></i>`
+   btn.innerText= `Detalhes`
 
    info.append(h3,paragraphAuthor,paragraphPublisher,paragraphDate,btn)
    book.append(imgContainer,info)

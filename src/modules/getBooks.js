@@ -8,7 +8,7 @@ export default async function getBooks(){
    const books = await response.json()
    const volumes = books.items
 
-   volumes.forEach(book => {
+   volumes.forEach(async book => {
        const id = book?.id
        const title = book.volumeInfo && book.volumeInfo.title;
        const authors = book.volumeInfo && book.volumeInfo.authors;
@@ -19,9 +19,9 @@ export default async function getBooks(){
        const averageRating = book.volumeInfo && book.volumeInfo.averageRating;
        const thumbnail = book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail;
 
-       renderBook(id,thumbnail,title,authors,publisher,publishedDate)
-    //    document.getElementById(id).addEventListener('click',(e)=>{
-    //     renderDetails(e)
-    //    })
+       await renderBook(id,thumbnail,title,authors,publisher,publishedDate)
+        document.getElementById(id).addEventListener('click',(e)=>{
+         renderDetails(e,thumbnail,title,authors,publisher,publishedDate,pageCount,averageRating,description)
+        })
    });
 }
