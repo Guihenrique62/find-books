@@ -275,6 +275,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem;
+  padding-bottom: 3rem;
 }
 #books .book {
   display: flex;
