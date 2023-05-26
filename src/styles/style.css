@@ -329,4 +329,69 @@ h2 {
   cursor: pointer;
 }
 
+.details {
+  width: 70%;
+  height: 500px;
+  position: fixed;
+  background-color: #e7e7fb;
+  display: none;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.414);
+}
+.details .book-detail {
+  display: flex;
+  flex-direction: row;
+}
+.details .book-detail .info-datails {
+  display: flex;
+  width: 60%;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.details .book-detail .info-datails h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.details .book-detail .info-datails p {
+  width: 100%;
+}
+.details .book-detail .info-datails p b {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.details .book-detail .img-details {
+  width: 40%;
+  height: 100%;
+}
+.details .book-detail .img-details img {
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+}
+.details .book-detail .img-details #close-details {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.details .book-detail .img-details #close-details .bx {
+  color: rgba(19, 19, 19, 0.675);
+  background-color: rgba(255, 255, 255, 0.399);
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 0.2rem;
+  margin: 1rem 1rem 0 0;
+}
+.details .book-detail .img-details #close-details .bx:hover {
+  color: white;
+  cursor: pointer;
+  background-color: rgb(224, 67, 67);
+}
+
 /*# sourceMappingURL=style.css.map */
