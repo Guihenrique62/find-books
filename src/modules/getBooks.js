@@ -13,10 +13,10 @@ export default async function getBooks(){
        const authors = book.volumeInfo && book.volumeInfo.authors;
        const publisher = book.volumeInfo && book.volumeInfo.publisher;
        const publishedDate = book.volumeInfo && book.volumeInfo.publishedDate;
-       //const description = book.volumeInfo?.description
-       //const pageCount = book.volumeInfo?.pageCount
-       //const averageRating = book.volumeInfo?.averageRating
-       const thumbnail = book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail
+       const description = book.volumeInfo && book.volumeInfo.description;
+       const pageCount = book.volumeInfo && book.volumeInfo.pageCount
+       const averageRating = book.volumeInfo && book.volumeInfo.averageRating
+       const thumbnail = book.volumeInfo.imageLinks && book.volumeInfo.imageLinks.thumbnail;
 
        renderBook(id,thumbnail,title,authors,publisher,publishedDate)
    });
