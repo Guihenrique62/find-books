@@ -48,6 +48,22 @@ body{
       }
    }
 
+   .details{
+      width: 700px;
+      height: 500px;
+   .book-detail{
+
+      .img-details{
+         width: 40%;
+
+         img{
+            width: 100%;
+            border-radius: 0 1rem 1rem 0;
+         }
+      }
+   }
+   }
+
    .first{
       .img-first{
          height: 300px;
@@ -152,6 +168,23 @@ body{
          gap: 5%;
       }
    }
+
+   .details{
+      width: 550px;
+      height: 400px;
+
+      .book-detail{
+         .info-details{
+            gap: 1rem;
+            
+            h3{
+               font-size: 1.2rem;
+            }
+         }
+
+         
+      }
+   }
 }
 
 @media (max-width: 630px){
@@ -223,6 +256,40 @@ body{
    }
 }
 
+@media (max-width: 550px){
+   .details{
+      width: 400px;
+      height: 250px;
+
+      .book-detail{
+         .info-details{
+            gap: .5rem;
+            
+            h3{
+               font-size: 1rem;
+            }
+            p{
+               width: 100%;
+               b{
+                  font-weight: 700;
+                  font-size: .9rem;
+               }
+               .bx{
+                  color: rgb(167, 167, 167);
+   
+                  &.active{
+                     color: #ebc128;
+                  }
+               }
+            }
+            .desc{
+               display: none;
+            }
+         }
+      }
+   }
+}
+
 @media (max-width: 470px){
    #books{
       grid-template-columns: 1fr;
@@ -286,7 +353,37 @@ body{
       }
    }
 
+   .details{
+      width: 350px;
+      height: 230px;
 
+      .book-detail{
+         .info-details{
+            gap: .5rem;
+            
+            h3{
+               font-size: 1rem;
+            }
+            p{
+               width: 100%;
+               b{
+                  font-weight: 700;
+                  font-size: .9rem;
+               }
+               .bx{
+                  color: rgb(167, 167, 167);
+   
+                  &.active{
+                     color: #ebc128;
+                  }
+               }
+            }
+            .desc{
+               display: none;
+            }
+         }
+      }
+   }
 }
 
 @media (max-width: 380px){
@@ -294,6 +391,40 @@ body{
       .book{
          width: 100%;
          max-width: 320px;
+      }
+   }
+
+   .details{
+      width: 300px;
+      height: 200px;
+
+      .book-detail{
+         .info-details{
+            gap: .2rem;
+            
+            h3{
+               font-size: .8rem;
+            }
+            p{
+               width: 100%;
+               font-size: .7rem;
+               b{
+                  font-weight: 700;
+                  font-size: .75rem;
+               }
+               .bx{
+                  color: rgb(167, 167, 167);
+                  font-size: .7rem;
+   
+                  &.active{
+                     color: #ebc128;
+                  }
+               }
+            }
+            .desc{
+               display: none;
+            }
+         }
       }
    }
 }

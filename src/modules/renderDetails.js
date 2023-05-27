@@ -54,6 +54,7 @@ export default async function renderDetails(e,thumbnail,title,authors,publisher,
     
     const paragraphDescription = document.createElement('p')
     paragraphDescription.innerHTML = `<b>Descrição: </b> ${description}`
+    paragraphDescription.classList.add('desc')
 
     const limiteDescription = 200; // Define o limiteAtuthor de caracteres
     if (paragraphDescription.innerHTML.length > limiteDescription) {
