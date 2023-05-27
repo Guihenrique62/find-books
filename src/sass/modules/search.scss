@@ -121,7 +121,7 @@
 
 
 .details{
-   width: 70%;
+   width: 900px;
    height: 500px;
    position: fixed;
    background-color: #e7e7fb;
@@ -135,10 +135,10 @@
       display: flex;
       flex-direction: row;
 
-      .info-datails{
+      .info-details{
          display: flex;
          width: 60%;
-         padding: 1rem;
+         padding: 1.5rem;
          flex-direction: column;
          gap: 2rem;
 
@@ -152,6 +152,13 @@
             b{
                font-weight: 500;
                font-size: 1.2rem;
+            }
+            .bx{
+               color: rgb(167, 167, 167);
+
+               &.active{
+                  color: #ebc128;
+               }
             }
          }
       }

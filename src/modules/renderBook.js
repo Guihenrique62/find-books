@@ -25,13 +25,17 @@ export default async function renderBook(id,thumbnail,title,authors,publisher,da
 
    const h3 = document.createElement('h3')
    h3.innerText = title
+   const limitTitle = 25;
+   if (h3.innerHTML.length > limitTitle) {
+      h3.innerHTML = h3.innerHTML.substring(0, limitTitle) + '...'; // Limita a quantidade de caracteres
+   }
    
 
    const paragraphAuthor = document.createElement('p')
    paragraphAuthor.innerHTML = `<b>Autor: </b> ${authors}`
    const limite = 50; // Define o limite de caracteres
    if (paragraphAuthor.innerHTML.length > limite) {
-       paragraphAuthor.innerHTML = paragraphAuthor.innerHTML.substring(0, limite); // Limita a quantidade de caracteres
+       paragraphAuthor.innerHTML = paragraphAuthor.innerHTML.substring(0, limite) + '...'; // Limita a quantidade de caracteres
       }
 
    const paragraphPublisher = document.createElement('p')
