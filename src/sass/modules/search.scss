@@ -1,5 +1,5 @@
 .search-main{
-   width: 1100px;
+   max-width: 1100px;
    display: flex;
    flex-direction: column;
    align-self: center;
@@ -66,10 +66,13 @@
    .book{
       display: flex;
       height: 250px;
+      max-width: 360px;
       background-color: white;
       border: #acacba;
       border-radius: .5rem;
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+      justify-self: center;
+      align-self: center;
       .img-container{
          height: 100%;
          img{
@@ -197,6 +200,5 @@
          }
       }
    }
-   
 
 }

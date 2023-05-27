@@ -23,4 +23,277 @@ body{
 @import 'modules/home.scss';
 
 //search page styler
-@import 'modules/search.scss'
+@import 'modules/search.scss';
+
+@media (max-width: 1200px){
+   #books{
+      .book{
+         max-width: 300px;
+      }
+   }
+
+   header{
+      max-width: 900px;
+   }
+}
+
+@media (max-width: 950px){
+   #books{
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      .book{
+         width: 100%;
+         max-width: 400px;
+      }
+   }
+
+   .first{
+      .img-first{
+         height: 300px;
+         display: flex;
+         width: auto;
+         justify-content: center;
+         img{
+            height: 100%;
+         }
+      }
+      .first-container{
+         font-size: 1rem;
+         h1{
+            font-size: 2rem;
+            font-weight: 500;
+         }
+      }
+   }
+   .second{
+      .second-imgs{
+         height: 200px;
+      }
+   }
+
+   .search-main{
+      .guide{
+         padding-left: 3rem;
+      }
+   }
+
+   header{
+      max-width: 800px;
+   }
+
+   footer{
+      font-size: 0.8rem;
+   }
+
+
+}
+
+@media (max-width: 820px){
+   #books{
+      .book{
+         width: 100%;
+         max-width: 350px;
+      }
+   }
+
+   header{
+      max-width: 650px;
+   }
+
+   footer{
+      text-align: center;
+   }
+   .third{
+      h2{
+         font-size: 1.2rem;
+      }
+   }
+
+   .first{
+      .first-container{
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 720px){
+   #books{
+      grid-template-columns: 1fr;
+      .book{
+         width: 100%;
+         max-width: 450px;
+      }
+   }
+
+   .search-main{
+      .guide{
+         padding-left: 3rem;
+         width: 80%;
+      }
+   }
+
+   header{
+      max-width: 450px;
+   }
+
+   footer{
+      .logo-text{
+         font-size: 1.5rem;
+      }
+      .bx{
+         color: white;
+         font-size: 2rem;
+      }
+   }
+
+   .second{
+      .second-container-text,.second-container-img{
+         gap: 5%;
+      }
+   }
+}
+
+@media (max-width: 630px){
+
+   #h2Text{
+      padding: 4rem 0 0 0;
+   }
+   .first{
+      grid-template-columns: 1fr;
+      margin-top: 8vh;
+      .first-container{
+         display: flex;
+         align-items: center;
+         width: 100%;
+         text-align: center;
+         h1{
+            font-size: 2rem;
+            text-align: center;
+         }
+      }
+      .img-first{
+         display: none;
+      }
+   }
+
+   .second{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-bottom: 3rem;
+      gap: 1rem;
+      text-align: center;
+   
+      .second-container-text,.second-container-img{
+         display: grid;
+         grid-template-rows: 1fr 1fr;
+         padding-bottom: 1rem;
+      }
+      .second-imgs{
+      height: 250px;
+      }
+      .second-container-img{
+         display: none;
+      }
+   }
+
+   .fourth{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      max-width: 1100px;
+      margin-top: 3rem;
+      padding-bottom: 3rem;
+      gap: 1rem;
+   
+      .fourth-imgs{
+         height: 200px;
+         display: flex;
+         flex-direction: column;
+         width: 80%;
+         justify-content: center;
+         gap: 1rem;
+         text-align: center;
+         img{
+            height: 90%;
+         }
+      }
+   }
+}
+
+@media (max-width: 470px){
+   #books{
+      grid-template-columns: 1fr;
+      .book{
+         width: 100%;
+         max-width: 380px;
+      }
+   }
+
+   .search-main{
+      .guide{
+         padding-left: 3rem;
+         width: 80%;
+         font-size: .8rem;
+      }
+   }
+
+   header{
+      max-width: 350px;
+      .header-text{
+         font-size: 1.5rem;
+      }
+   }
+
+   footer{
+      .logo-text{
+         font-size: 1.3rem;
+      }
+      .bx{
+         color: white;
+         font-size: 1.6rem;
+      }
+      p{
+         padding-left: 1rem;
+      }
+   }
+
+   .second{
+      font-size: .8rem;
+      .second-imgs{
+         height: 150px;
+      }
+   }
+   .third{
+      .second-imgs{
+         height: 150px;
+      }
+   }
+
+   h2{
+      font-size: 1.5rem;
+   }
+
+   .first{
+      .first-container{
+         font-size: .7rem;
+         h1{
+            font-size: 1.6rem;
+            font-weight: 500;
+         }
+      }
+   }
+
+
+}
+
+@media (max-width: 380px){
+   #books{
+      .book{
+         width: 100%;
+         max-width: 320px;
+      }
+   }
+}
