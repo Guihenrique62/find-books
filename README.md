@@ -26,7 +26,7 @@ This is a project where we can find any book we want. The system was integrated 
 
  ```bash
    # Enter Directory
-   $ cd portfolio
+   $ cd find-books
  ```
 
 ## License 🧾
